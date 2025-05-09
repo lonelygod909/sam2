@@ -26,6 +26,7 @@ class BatchedMattingImageMetaData:
 
 @tensorclass
 class BatchedMattingVideoDatapoint:
+    img_batch : torch.FloatTensor
     obj_to_frame_idx: torch.IntTensor
     masks: torch.BoolTensor
     alphas: torch.FloatTensor
